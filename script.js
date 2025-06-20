@@ -3,7 +3,8 @@ const display = document.getElementById("display");
 const toggleButton = document.getElementById("toggle-dark");
 
 toggleButton.addEventListener("click", () => {
-  document.body.classList.toggle("dark-mode");
+  const isDark = document.body.classList.toggle("dark-mode");
+  toggleButton.textContent = isDark ? "☀️ Light Mode" : "🌙 Dark Mode";
 });
 
 let currentInput = "";
