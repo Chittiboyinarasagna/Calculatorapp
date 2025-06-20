@@ -1,0 +1,72 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #f2f2f2;
+  font-family: Arial, sans-serif;
+}
+
+.calculator {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#display {
+  width: 100%;
+  height: 50px;
+  margin-bottom: 10px;
+  text-align: right;
+  font-size: 24px;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+}
+/* 🌙 Dark Mode Styles */
+body.dark-mode {
+  background: #1e1e1e;
+  color: white;
+}
+
+body.dark-mode .calculator {
+  background: #333;
+  box-shadow: 0 0 10px #000;
+}
+
+body.dark-mode button {
+  background: #555;
+  color: white;
+}
+
+body.dark-mode button:hover {
+  background: #666;
+}
+
+body.dark-mode #display {
+  background: #222;
+  color: white;
+}
+
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* each column takes equal space */
+  gap: 10px;
+}
+
+button {
+  padding: 15px;
+  font-size: 18px;
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+  background: #e0e0e0;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #d5d5d5;
+}
